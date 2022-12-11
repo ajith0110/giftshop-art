@@ -4,6 +4,9 @@ import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import { AiOutlineBorderlessTable } from "react-icons/ai";
 import { BsFillCheckCircleFill } from "react-icons/bs";
+import { ImWhatsapp } from "react-icons/im";
+import { priceDetails } from "../data";
+import ItemCard, { ItemType } from "../components/ItemCard";
 
 export default function Home() {
     return (
@@ -19,14 +22,10 @@ export default function Home() {
 
             <main className={styles.main}>
                 <h1 className={styles.title}>Prices & Sizes</h1>
-
-                {/* <p className={styles.description}>
-                    Get started by editing{" "}
-                    <code className={styles.code}>pages/index.tsx</code>
-                </p>
-
-                */}
-                <div className={styles.card}>
+                {priceDetails.map((item: ItemType, i) => (
+                    <ItemCard item={item} key={i} />
+                ))}
+                {/* <div className={styles.card}>
                     <div
                         style={{
                             backgroundImage: `url("https://images.unsplash.com/photo-1513161455079-7dc1de15ef3e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1976&q=80")`,
@@ -82,12 +81,14 @@ export default function Home() {
                         </div>
                         <div className={styles.btnArea}>
                             <button type="button" className={styles.callNowBtn}>
-                                <span className={styles.btnIcon}></span>
-                                <a href="#">Order Now</a>
+                                <span className={styles.btnIcon}>
+                                    <ImWhatsapp />
+                                </span>
+                                <a href="#">Order now</a>
                             </button>
                         </div>
                     </div>
-                </div>
+                </div> */}
             </main>
         </div>
     );
