@@ -77,7 +77,9 @@ export default function ItemCard(props: ItemCardProps) {
                         <span className={styles.btnIcon}>
                             <ImWhatsapp />
                         </span>
-                        <a href={`${whatsApp}`}>Order now</a>
+                        <a target="blank" href={`${whatsApp}`}>
+                            Order now
+                        </a>
                     </button>
                 </div>
             </div>
