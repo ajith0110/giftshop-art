@@ -35,14 +35,6 @@ export default function ItemCard(props: ItemCardProps) {
                         />
                         <span className={styles.cardTitle}>{title}</span>
                     </div>
-                    <div className={styles.priceTagArea}>
-                        <div className={styles.priceTag}>
-                            <span> 01 Person - {personOne} LKR</span>
-                        </div>
-                        <div className={styles.priceTag}>
-                            <span> 02 Person - {personTwo} LKR</span>
-                        </div>
-                    </div>
                     <div className={styles.bulletListArea}>
                         <div className={styles.bulletListItem}>
                             <BsFillCheckCircleFill
@@ -71,13 +63,24 @@ export default function ItemCard(props: ItemCardProps) {
                             </span>
                         </div>
                     </div>
+                    <div className={styles.priceTagArea}>
+                        <div className={styles.priceTag}>
+                            <span> 01 Person - {personOne} LKR</span>
+                        </div>
+                        <div className={styles.priceTag}>
+                            <span> 02 Person - {personTwo} LKR</span>
+                        </div>
+                    </div>
+                  
                 </div>
                 <div className={styles.btnArea}>
                     <button type="button" className={styles.callNowBtn}>
                         <span className={styles.btnIcon}>
                             <ImWhatsapp />
                         </span>
-                        <a href={`${whatsApp}`}>Order now</a>
+                        <a target="blank" href={`${whatsApp}`}>
+                            Order now
+                        </a>
                     </button>
                 </div>
             </div>

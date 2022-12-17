@@ -7,7 +7,7 @@ const priceDetails: ItemType[] = [
         personOne: "1500",
         personTwo: "2500",
         additional: "600",
-        whatsApp: "#",
+        whatsApp: "https://wa.me/c/94774031528",
     },
     {
         title: "6 x 8 Inches",
@@ -15,7 +15,7 @@ const priceDetails: ItemType[] = [
         personOne: "3500",
         personTwo: "4500",
         additional: "600",
-        whatsApp: "#",
+        whatsApp: "https://wa.me/c/94774031528",
     },
     {
         title: "8 x 12 Inches",
@@ -23,7 +23,7 @@ const priceDetails: ItemType[] = [
         personOne: "5500",
         personTwo: "6500",
         additional: "600",
-        whatsApp: "#",
+        whatsApp: "https://wa.me/c/94774031528",
     },
     {
         title: "10 x15 Inches",
@@ -31,7 +31,7 @@ const priceDetails: ItemType[] = [
         personOne: "6500",
         personTwo: "7500",
         additional: "600",
-        whatsApp: "#",
+        whatsApp: "https://wa.me/c/94774031528",
     },
 ];
 
