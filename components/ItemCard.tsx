@@ -28,19 +28,20 @@ export default function ItemCard(props: ItemCardProps) {
             <img src={url} className={styles.image} />
 
             <div className={styles.bottomSection}>
-                <span className={styles.cardTitle}>{title}</span>
+                <span className={styles.cardTitle}>
+                    {title} <span>{subTitle}</span>
+                </span>
                 <br></br>
-                <span className={styles.cardSubTitle}>{subTitle}</span>
-
-                <button type="button" className={styles.callNowBtn}>
-                    <span className={styles.btnIcon}>
-                        <ImWhatsapp />
-                    </span>
-                    <a target="blank" href={`${whatsApp}`}>
-                        Order now
-                    </a>
-                </button>
+                <span className={styles.cardSubTitle}>{personOne} LKR</span>
             </div>
+            <button type="button" className={styles.callNowBtn}>
+                <span className={styles.btnIcon}>
+                    <ImWhatsapp />
+                </span>
+                <a target="blank" href={`${whatsApp}`}>
+                    Order now
+                </a>
+            </button>
         </div>
     );
 }
